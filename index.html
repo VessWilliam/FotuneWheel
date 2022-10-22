@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+</head>
+<script src="app.js" defer></script>
+<body>
+    <div class="beardiv">
+        <img class="bear" src="asset/bear.png" alt="">
+    </div>
+    <div>
+        <div class="container">   
+            <div class="title">Fortune Wheel</div>     
+        <form id="fortuneForm">
+          <div class="user-detail">
+            <div class="input-box">
+                <span class="details">Choice One</span>
+                <input type="text" maxlength="10"  name="one" placeholder="Enter your Wish" required>
+            </div>  
+
+                <div class="input-box">
+                    <span class="details">Choice two</span>
+                    <input type="text" maxlength="10" name="two"  placeholder="Enter your Wish" required>
+                </div>     
+
+                <div class="input-box">
+                    <span class="details">Choice three</span>
+                    <input type="text" maxlength="10" name="three" placeholder="Enter your Wish" required>
+                </div>  
+                
+                <div class="input-box">
+                    <span class="details">Choice four</span>
+                    <input type="text" maxlength="10" name="four"  placeholder="Enter your Wish" required>
+                </div>  
+
+                <div class="input-box">
+                    <span class="details">Choice five</span>
+                    <input type="text" maxlength="10" name="five" placeholder="Enter your Wish" required>
+                </div>  
+                
+                <div class="input-box">
+                    <span class="details">Choice six</span>
+                    <input type="text" maxlength="10" name="six" placeholder="Enter your Wish" required>
+                </div>  
+            </div>
+            <a href="./second.html">
+                <button class="button">Make A Choice</button>
+            </a>
+        </form>
+    </div>
+</div>
+</body>
+</html>

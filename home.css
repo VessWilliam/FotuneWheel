@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 10px;   
+    background:linear-gradient(135deg,#3a6186,#89253e);
+
+}
+
+.beardiv{
+    position: absolute;
+    margin-bottom: 600px;
+    z-index: -1;
+    padding-left: -100px;
+}
+
+.bear{
+    width: 250px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: -2;
+    padding: 20px 20px;
+    animation: rotation 8s infinite linear;
+    margin: 0;
+    float: center;
+    filter: opacity(0.5) drop-shadow(0 0 0 #3a6186);
+}
+
+@keyframes rotation{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .title{
+    margin-bottom: 30px;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: underline;
+     color: #f0e5e5;
+}
+
+.container form .user-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    color: #f0e5e5;
+}
+
+form .user-detail .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-detail .input-box .details{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-detail .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid rgb(192, 151, 151);
+    padding-left: 15px;
+    font-size: 20px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.user-detail .input-box input:focus,
+.user-detail .input-box input:valid{
+    border-color: #5D4954
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+.button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #f0e5e5;
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: #141414;
+    background:linear-gradient(135deg,#3a6186,#89253e);
+    box-shadow: 0 5px 10px #5D4954;
+    box-shadow: 0 5px 10px rgb(207, 204, 204);
+}
+
+a{
+    color: #141414;
+    text-decoration: none;
+}
+
+.button:hover{
+    background:linear-gradient(135deg,#89253e ,#3a6186);
+    box-shadow: none;
+   
+}
+@media (max-width: 584px ) {
+    .container{
+        max-width: 100%;
+    }
+    form .user-detail .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .user-detail{
+        max-height: 300px ;
+        overflow-y: scroll;
+    } 
+    .user-detail::-webkit-scrollbar{
+        width: 0;
+    }
+}

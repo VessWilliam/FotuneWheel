@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>spiningWheel</title>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+</head>
+<script src="script.js" defer></script>
+<body>
+   
+    <div class="beardiv">
+        <img class="bear" src="./asset/bear.png" alt="">
+    </div>
+    <div class="container">
+    <div id="wheel" class="one">True</div>
+    <div id="wheel" class="two">Dare</div>
+    <div id="wheel" class="three">Drink</div>
+    <div id="wheel" class="four">Kiss</div>
+    <div id="wheel" class="five">True</div>
+    <div id="wheel" class="six">Dare</div>
+    </div>
+    <span class="mid"></span>
+    <button id="spin">SPIN</button>
+    <div class="stopper"></div>
+    <button id="Exit"><a href="index.html">Exit</a></button>
+    <div class="beardivS">
+        <img class="bearS" src="./asset/bear.png" alt="">
+    </div>
+
+</body>
+</html>
