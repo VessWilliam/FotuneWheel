@@ -1,202 +1,234 @@
-*{
-    margin:0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100%;
+  background: linear-gradient(135deg, #3a6186, #89253e);
+  overflow: hidden;
+}
+
+
+@media (max-width: 20rem) and (max-height: 30rem),
+  (orientation: landscape),
+  (max-width: 48rem) and (max-height: 30rem),
+  (max-width: 100rem) and (min-height: 30rem),
+  (max-width: 20rem) and (max-height: 41rem),
+  (max-width: 10rem) and (max-height: 41rem) {
+
+
+.beardivS {
+    position: absolute;
+    z-index: -2;
     padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    min-height:100vh;
-    background:linear-gradient(135deg,#3a6186,#89253e);
-    overflow: hidden;
-}
-
-.beardiv{
-    position: absolute;
-    margin-bottom: 600px;
-    z-index: -1;
-    padding-left: 100px;
-}
-
-.bear{
-    width: 250px;
-    height: 150px;
-    position: absolute;
+    left: -3rem;
+    margin: 30rem 0 0 0;
+    max-width: 100%;
+    max-height: 30%;
+    }
+    
+    .bearS {
+    max-width: 13rem;
+    max-height: 8rem;
+    position: fixed;
     display: flex;
-    align-items: center;
+    align-items: left;
     z-index: -2;
-    padding: 20px 30px;
+    padding: 1rem 2rem 1rem 2rem;
     animation: rotation 8s infinite linear;
     margin: 0;
-    float: left;
-    filter: opacity(0.5) drop-shadow(0 0 0 rgb(224, 107, 107));
-}
-
-@keyframes rotation{
-    from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(359deg);
-      }
-}
-
-.beardivS{
-    position: absolute;
-    margin-bottom: -600px;
-    z-index: -1;
-    padding-right: 600px;
-    margin-top: -300px;
-}
-
-.bearS{
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    z-index: -2;
-    padding: 20px 30px;
-    animation: rotation 8s infinite linear;
-    margin: 0;
-    float: left;
     filter: opacity(0.5) drop-shadow(0 0 0 rgb(106, 106, 206));
-}
-
-@keyframes rotation{
+    }
+    
+    @keyframes rotation {
     from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(359deg);
-      }
-}
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(359deg);
+    }
+    }
 
+  .beardiv {
+    position: absolute;
+    margin: 0;
+    padding:0 ;
+    max-width: 100%;
+    max-height: 30%;
+    right: 10rem;
+  }
 
+  .bear {
+    max-width: 13rem;
+    max-height: 8rem;
+    display: flex;
+    position: fixed;
+    align-items: right;
+    z-index: -2;
+    padding: 1rem 2rem 1rem 2rem;
+    animation: rotation 8s infinite linear;
+    margin: 0 ;
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(224, 107, 107));
+  }
 
-.container{
-    height:350px;
-    width:350px;
-    background:#4C3A51;
+  @keyframes rotation {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(359deg);
+    }
+  }
+
+  .Main {
+    min-width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .container {
+    height: 22rem;
+    width: 22rem;
+    margin: 8rem 8rem auto 8rem;
+    background: #4c3a51;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 10px rgb(207, 204, 204);
+    box-shadow: 0 0 0.6rem rgb(207, 204, 204);
     transition: 3s all;
-}
+  }
 
-.container div{
-    height: 50%;
-    width: 200px;
-    clip-path: polygon(100% 0,50% 100%, 0 0);
+  .container div {
+    max-height: 50%;
+    max-width: 13rem;
+    clip-path: polygon(100% 0, 50% 100%, 0 0);
     position: absolute;
     transform: translateX(-50%);
-    transform-origin:bottom;
+    transform-origin: bottom;
     left: 21%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 2rem;
     text-transform: capitalize;
     font-weight: 1000;
-    font-family: 'Mountains of Christmas', cursive;
-    letter-spacing: 5px;
+    font-family: "Mountains of Christmas", cursive;
+    letter-spacing: 0.5rem;
     color: #d6d2d2;
     writing-mode: vertical-rl;
-}
+  }
 
-.container .one{
+  .container .one {
     background: #774360;
     left: 50%;
-}
-.container .two{
-    background: #B25068;
+    height: 12rem;
+    width: 16rem;
+  }
+  .container .two {
+    background: #b25068;
     transform: rotate(60deg);
-}
-.container .three{
+    height: 12rem;
+    width: 16rem;
+  }
+  .container .three {
     background: #774360;
     transform: rotate(120deg);
-}
-.container .four{
-    background: #B25068;
+    height: 12rem;
+    width: 16rem;
+  }
+  .container .four {
+    background: #b25068;
     transform: rotate(180deg);
-}
-.container .five{
+    height: 12rem;
+    width: 16rem;
+  }
+  .container .five {
     background: #774360;
     transform: rotate(240deg);
-}
-.container .six{
-    background: #B25068;
+    height: 12rem;
+    width: 16rem;
+  }
+  .container .six {
+    background: #b25068;
     transform: rotate(300deg);
-}
+    height: 12rem;
+    width: 16rem;
+  }
 
-.mid{
-    height: 25px;
-    width: 25px;
-    background: #4C3A51;
+  .mid {
+    height: 2rem;
+    width: 2rem;
+    background: #4c3a51;
     border-radius: 50%;
-    position:absolute;
-}
-
-#spin{
-    height: 60px;
-    width: 200px;
-   
-    position:absolute;
-    margin-top: 600px;
-    border: 1px solid rgb(207, 204, 204);
-    border-radius: 100px;
-    font-size: 30px;
-    font-family: 'Mountains of Christmas', cursive;
-    font-weight: 1000;
-    color: #d38181;
-    letter-spacing: 6px;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgb(207, 204, 204);
-    transition: 0.2s all;
-}
-
-#spin:hover{
-    box-shadow: none ;
-    color: #141414;
-
-}
-
-#Exit{
-    width: 200px;
-    height: 60px;
     position: absolute;
-    margin-bottom: 600px;
-    border-radius: 100px;
-    font-family: 'Mountains of Christmas', cursive;
-    font-weight: 1000;
-    cursor: pointer;
-    border: 1px solid rgb(207, 204, 204);
-    box-shadow: 0 5px 10px rgb(207, 204, 204);
-    color: #d38181;
-    letter-spacing: 6px;
-    transition: 0.2s all;
-    font-size: 30px;
-    background:#774360;
-    text-transform: capitalize;
-}
-
-a{
-    color:#d38181 ;
-}
-
-#Exit:hover{
-    box-shadow: none ;
-    color: #bbb2b2;
-}
-
-.stopper{
-    height: 50px;
-    width: 40px;
+    margin: 18rem 0 0 0;
+  }
+  .stopper {
+    height: 3rem;
+    width: 3rem;
     background: #d8cf53;
     position: absolute;
-    margin-top: -350px;
     clip-path: polygon(100% 0, 50% 100%, 0 0);
+    margin: 6rem 0 0 0;
+  }
+  #spin {
+    height: 4rem;
+    width: 13rem;
+
+    position: absolute;
+    margin-top: 32rem;
+    border: 0.2rem solid rgb(207, 204, 204);
+    border-radius: 7rem;
+    font-size: 2rem;
+    font-family: "Mountains of Christmas", cursive;
+    font-weight: 1000;
+    color: #d38181;
+    letter-spacing: 0.7rem;
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.5rem rgb(207, 204, 204);
+    transition: 0.2s all;
+  }
+
+  #spin:hover {
+    box-shadow: none;
+    color: #141414;
+  }
+
+  #Exit {
+    width: 13rem;
+    height: 4rem;
+    position: absolute;
+    margin-bottom: 33rem;
+    border-radius: 7rem;
+    font-family: "Mountains of Christmas", cursive;
+    font-weight: 1000;
+    cursor: pointer;
+    border: 0.2rem solid rgb(207, 204, 204);
+    box-shadow: 0 0.4rem 0.7rem rgb(207, 204, 204);
+    color: #d38181;
+    letter-spacing: 0.4rem;
+    transition: 0.2s all;
+    font-size: 1.9rem;
+    background: #774360;
+    text-transform: capitalize;
+  }
+
+  a {
+    color: #d38181;
+  }
+
+  #Exit:hover {
+    box-shadow: none;
+    color: #bbb2b2;
+  }
 }

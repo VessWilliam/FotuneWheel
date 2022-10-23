@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 30px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 body{
@@ -12,26 +12,26 @@ body{
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    padding: 10px;   
+    padding: 0.8rem;   
     background:linear-gradient(135deg,#3a6186,#89253e);
 
 }
 
 .beardiv{
     position: absolute;
-    margin-bottom: 600px;
-    z-index: -1;
-    padding-left: -100px;
+    margin:0rem 0 28rem 0;
+    z-index: -2;
+    padding:0;
 }
 
 .bear{
-    width: 250px;
-    height: 150px;
-    position: relative;
+    max-width: 13rem;
+    max-height: 8rem;
+    position: flex;
     display: flex;
     align-items: center;
     z-index: -2;
-    padding: 20px 20px;
+    padding: 1rem 1rem;
     animation: rotation 8s infinite linear;
     margin: 0;
     float: center;
@@ -40,25 +40,26 @@ body{
 
 @keyframes rotation{
     from {
-        transform: rotate(0deg);
+        transform: rotateZ(0deg);
       }
       to {
-        transform: rotate(359deg);
+        transform: rotateZ(359deg);
       }
 }
 .container{
-    max-width: 700px;
+    min-height: 100vh;
+    max-width: 42rem;
     width: 100%;
-    padding: 25px 30px;
-    border-radius: 5px;
+    padding: 1rem 1rem;
+    border-radius: 0.4rem;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .container .title{
-    margin-bottom: 30px;
-    font-size: 80px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
     font-weight: bold;
     text-decoration: underline;
      color: #f0e5e5;
@@ -68,30 +69,30 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 0 12px 0;
+    margin: 1rem 0 0.8rem 0;
     color: #f0e5e5;
 }
 
 form .user-detail .input-box{
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
+    margin-bottom: 0.8rem;
+    width: calc(100% / 2 - 1.3rem);
 }
 
 .user-detail .input-box .details{
     display: block;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0.4rem;
 }
 
 .user-detail .input-box input{
-    height: 45px;
+    height: 3rem;
     width: 100%;
     outline: none;
-    border-radius: 5px;
-    border:1px solid rgb(192, 151, 151);
-    padding-left: 15px;
-    font-size: 20px;
-    border-bottom-width: 2px;
+    border-radius: 0.4rem;
+    border:0.1rem solid rgb(192, 151, 151);
+    padding-left: 0.1rem;
+    font-size: 1rem;
+    border-bottom-width: 0.01rem;
     transition: all 0.3s ease;
     text-transform: capitalize;
 }
@@ -102,24 +103,24 @@ form .user-detail .input-box{
 }
 
 form .button{
-    height: 45px;
-    margin: 45px 0;
+    max-height: 3rem;
+    margin: 2rem 0;
 }
 
 .button{
-    height: 100%;
+    max-height: 80%;
     width: 100%;
     outline: none;
     color: #f0e5e5;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2rem;
     border: none;
-    letter-spacing: 1px;
-    border-radius: 5px;
+    letter-spacing: 0.01rem;
+    border-radius: 0.4rem;
     border: #141414;
     background:linear-gradient(135deg,#3a6186,#89253e);
-    box-shadow: 0 5px 10px #5D4954;
-    box-shadow: 0 5px 10px rgb(207, 204, 204);
+    box-shadow: 0 0.4rem 0.8rem #5D4954;
+    box-shadow: 0 0.4rem 0.8rem rgb(207, 204, 204);
 }
 
 a{
@@ -132,16 +133,16 @@ a{
     box-shadow: none;
    
 }
-@media (max-width: 584px ) {
+@media (max-width: 38rem ) {
     .container{
         max-width: 100%;
     }
     form .user-detail .input-box{
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
         width: 100%;
     }
     .container form .user-detail{
-        max-height: 300px ;
+        max-height: 16rem ;
         overflow-y: scroll;
     } 
     .user-detail::-webkit-scrollbar{
