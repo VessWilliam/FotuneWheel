@@ -1,5 +1,4 @@
 # Mad Fortune Wheel
 
 # 💡Notes
-
-  # using html css javascript
+     ## using html css javascript
